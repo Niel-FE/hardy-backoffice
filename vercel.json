@@ -1,9 +1,9 @@
 {
-  "buildCommand": "npm run build",
-  "devCommand": "npm run dev",
+  "buildCommand": "cd backoffice && npm run build",
+  "devCommand": "cd backoffice && npm run dev",
   "installCommand": "npm install",
   "framework": "nextjs",
-  "outputDirectory": ".next",
+  "outputDirectory": "backoffice/.next",
   "regions": ["icn1"],
   "git": {
     "deploymentEnabled": {

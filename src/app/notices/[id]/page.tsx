@@ -122,7 +122,15 @@ export default function NoticeDetailPage() {
 
   return (
     <div className="p-6">
-      <Toast toasts={toasts} onClose={hideToast} />
+      {/* Toasts */}
+      {toasts.map((toast) => (
+        <Toast
+          key={toast.id}
+          message={toast.message}
+          type={toast.type}
+          onClose={() => hideToast(toast.id)}
+        />
+      ))}
 
       {/* Header */}
       <div className="mb-8">
