@@ -10,7 +10,7 @@ import Toast from '@/components/Toast';
 import { useToast } from '@/hooks/useToast';
 import { getFromStorage, saveToStorage, STORAGE_KEYS, generateId, formatDate } from '@/lib/storage';
 import { VODSet } from '@/types/vod';
-import { mockVODSets as initialVODSets } from '@ud/shared';
+import { mockVODSets as initialVODSets } from '@/lib/shared';
 import WorkflowGuide from '@/components/WorkflowGuide';
 
 const initialPrograms = [
